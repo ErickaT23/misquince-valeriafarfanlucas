@@ -144,21 +144,13 @@ function confirmarAsistencia() {
 // Función para abrir Waze o Google Maps
 function elegirAplicacion() {
     const enlaceGoogleMaps = 'https://maps.app.goo.gl/RyBzj2xNxDKWdJaE9';
-
     window.open(enlaceGoogleMaps, '_blank');
-    setTimeout(() => {
-        window.open(enlaceWaze, '_blank');
-    }, 1000);
 }
-
 function elegirAplicacionOtraDireccion() {
     const enlaceGoogleMaps = 'https://maps.app.goo.gl/9F42xmijRvivmaGA7';
-
     window.open(enlaceGoogleMaps, '_blank');
-    setTimeout(() => {
-        window.open(enlaceWaze, '_blank');
-    }, 1000);
 }
+
 
 document.addEventListener("DOMContentLoaded", function () {
     // Mostrar/ocultar formulario
@@ -237,3 +229,9 @@ document.addEventListener("DOMContentLoaded", function () {
     crearEstrellitas();
   });
   
+window.changePhoto = changePhoto;
+window.openModal = openModal;
+window.closeModal = closeModal;
+window.confirmarAsistencia = confirmarAsistencia;
+window.elegirAplicacion = elegirAplicacion;
+window.elegirAplicacionOtraDireccion = elegirAplicacionOtraDireccion;
