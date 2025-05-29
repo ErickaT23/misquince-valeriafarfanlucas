@@ -229,9 +229,11 @@ document.addEventListener("DOMContentLoaded", function () {
     crearEstrellitas();
   });
   
+//exponer globalmente
 window.changePhoto = changePhoto;
 window.openModal = openModal;
 window.closeModal = closeModal;
 window.confirmarAsistencia = confirmarAsistencia;
 window.elegirAplicacion = elegirAplicacion;
 window.elegirAplicacionOtraDireccion = elegirAplicacionOtraDireccion;
+
