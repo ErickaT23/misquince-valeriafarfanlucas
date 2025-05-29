@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Quince Samantha Jerez García</title>
+    <meta property="og:title" content="Mis Quince Samantha Jerez García">
+    <meta property="og:description" content="Te invito a mis quince, con amor Samantha.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preload" href="/imagenes/53.png" as="image">
+     <!-- Preconnect and Load Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+     <script src="https://cdn.lordicon.com/lordicon.js"></script>   
+</head>
+<body>
+    <div id="starfield"></div>
+    <!-- Sobre de la Invitación -->
+    <div id="envelope">
+        <div id="starfield-envelope"></div> <!-- Aquí estarán las estrellas -->
+        <div id="envelope-top"></div>
+        <div id="seal">
+            <h2 class="fade-in-element visible" style="transition-delay: 0s;">Mis Quince Valeria</h2>
+        </div>
+        <div id="envelope-bottom"></div>
+    </div>
+    <!-- Contenido de la Invitación -->
+    <div id="invitacion">
+        <!--Header-->
+        <header class="sintillo">
+            <h1>Mis Quince</h1>
+            <h2>Valeria </h2>
+            <h3>Farfan Lucas</h3>
+        </header>
+        <!-- Sección de Foto -->
+        <div class="section-main fade-in-element">
+            <img src="/imagenes/v5.jpeg" alt="Foto de la quinceañera" width="100%">
+        </div>
+        <!--div cerezo-->
+        <div class="section-cerezo0"></div> 
+        <!-- Contador de Fecha Regresiva -->
+        <div class="section-countdown fade-in-element">
+            <h1>¡Están invitados!</h1>
+            <p>Nos encanta que sean parte de este momento tan especial para nosotros.</p>
+            <h2>29 . 11 . 2025</h2>
+            <div id="contador">
+                <div class="countdown-circle">
+                    <span id="dias">00</span>
+                    <span>días</span>
+                </div>
+                <div class="countdown-circle">
+                    <span id="horas">00</span>
+                    <span>horas</span>
+                </div>
+                <div class="countdown-circle">
+                    <span id="minutos">00</span>
+                    <span>minutos</span>
+                </div>
+                <div class="countdown-circle">
+                    <span id="segundos">00</span>
+                    <span>segundos</span>
+                </div>
+            </div>
+             <!-- Agregar al Calendario -->
+              <div class="section-calendar">
+                <a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=M21lcThydG1xc29rcWpjZWFwZmFnazJodjAgY182OTRhZWE0ODlhN2FkZTJiYzRmYjRiNGExYTE2ZmY3ZDY2ZjAzNzFlMTgwY2I1MzZmM2M3YzE2NGUxZWMwOGIxQGc&tmsrc=c_694aea489a7ade2bc4fb4b4a1a16ff7d66f0371e180cb536f3c7c164e1ec08b1%40group.calendar.google.com">Agregar al calendario</a>
+              </div>
+        </div>  
+        <!-- Música de fondo -->
+        <div class="section-music fade-in-element">
+            <h2>"Butterfly fly away - Miley Cirus ft Billy Ray Cirus"</h2>
+          <audio id="musica" controls loop>
+             <source src="/Butterfly Fly Away.mp3" type="audio/mpeg">
+             Tu navegador no soporta la reproducción de audio.
+          </audio>
+        </div>   
+        <!--div cerezo-->
+        <div class="section-cerezo1"></div>   
+         <!-- Bendición de Padres -->
+         <div class="section-b fade-in-element">
+            <p>Con la bendición de Dios y de mis padres</p>
+            <h1>Angel Farfan</h1>
+            <h2>&</h2>
+            <h1>Genoveva Lucas</h1>
+        </div>        
+                <!-- Nombre de Invitados y Cantidad de Pases -->
+                <div class="section fade-in-element">
+                    <h1>Los invitamos con mucho cariño</h1>
+                    <h3 id="nombreInvitado"></h3>
+                    <h3 id="cantidadPases"></h3>
+                </div>
+         <!--imagen-->
+         <div class="section fade-in-element">
+            <img src="/imagenes/v3.jpeg" alt="Foto de la quinceañera" width="100%" loading="lazy">
+        </div>
+        <!-- Itinerario -->
+        <div class="section fade-in-element">
+          <!--card ceremonia-->
+            <div class="ceremony fade-in-element">
+                <lord-icon
+                 src="https://cdn.lordicon.com/jqmftaai.json"
+                 trigger="loop"
+                 delay="2000"
+                 stroke="light"
+                 colors="primary:#9D7EB6,secondary:#d4af37"
+                 style="width:200px;height:200px">
+               </lord-icon>
+               <h2>Ceremonia</h2>
+               <p>Iglesia Nuestra Señora de Guadalupe</p>
+               <div class="details">
+                   <div class="time-location">
+                     <span class="date"> 29 Noviembre</span>
+                     <span class="separator">|</span>
+                     <span class="time">16:45 hrs</span>
+                  </div>
+                     <p>19 Calle, Zona 10, Ciudad de Guatemala</p>
+                     <button type="button" class="direction-button" onclick="elegirAplicacion()">Cómo llegar</button>
+               </div>
+            </div>
+         <!--card fiesta-->
+           <div class="party fade-in-element">
+            <lord-icon
+             src="https://cdn.lordicon.com/nsgykrsg.json"
+             trigger="loop"
+             delay="2000"
+             stroke="light"
+             colors="primary:#9D7EB6,secondary:#d4af37"
+             style="width:200px;height:200px">
+            </lord-icon>
+           <h2>Recepción</h2>
+           <p>Salón los Reyes, Hotel Barcelo</p>
+           <div class="details">
+            <div class="time-location">
+                <span class="date"> 29 Noviembre</span>
+                <span class="separator">|</span>
+                <span class="time">18:00 hrs</span>
+            </div>
+        <p>7ma avenida, Zona 9, Ciudad de Guatemala</p>
+        <button type="button" class="direction-button" onclick="elegirAplicacionOtraDireccion()">Cómo llegar</button>
+           </div>
+           </div>
+        </div>
+        <!--div cerezo-->
+        <div class="section-cerezo2"></div>
+         <!-- Regalos -->
+         <div class="section-gifts fade-in-element">
+            <lord-icon class="icon-gift"
+             src="https://cdn.lordicon.com/kezeezyg.json"
+             trigger="loop"
+             delay="2000"
+             stroke="light"
+             colors="primary:#9D7EB6,secondary:#d4af37"
+             style="width:200px;height:200px">
+            </lord-icon>
+            <h2>Lluvia de Sobres</h2>
+            <p>Lo que más queremos es compartir contigo nuestro gran día, pero agradecemos mucho el gesto de un obsequio. Tendremos un cofre en la entrada para que puedas dejar tu sobre con efectivo</p>
+            <p>¡Gracias!</p>
+        </div>
+         <!-- Playlist -->
+         <div class="section-playlist fade-in-element">
+            <h2>Playlist</h2>
+             <lord-icon
+                 src="https://cdn.lordicon.com/vvlnxtgv.json"
+                 trigger="loop"
+                 delay="2000"
+                 stroke="light"
+                 colors="primary:#9D7EB6,secondary:#d4af37"
+                 style="width:200px;height:200px">
+             </lord-icon>
+            <p>Nos encantaría que nos sugieras esas canciones que sabes que son geniales y no pueden faltar.</p>
+            <button onclick="window.open('https://open.spotify.com/playlist/4bgs0PUtVn4OcWIBgNYi7p?si=bfbe0bcf1fa5456b&pt=8cb44b01f90380fcf78da770d1fb4a38', '_blank')"> Abrir playlist en Spotify</button>
+        </div>
+         <!--imagen-->
+         <div class="section fade-in-element">
+            <img src="/imagenes/v2.jpeg" alt="Foto de la quinceañera" width="100%" loading="lazy">
+        </div>
+         <!--dresscode-->
+         <div class="section fade-in-element">
+            <h2>Dress Code</h2>
+            <lord-icon
+            src="https://cdn.lordicon.com/okgbpdra.json"
+            trigger="loop"
+            delay="2000"
+            stroke="light"
+            colors="primary:#9D7EB6,secondary:#d4af37"
+            style="width:200px;height:200px">
+        </lord-icon>
+            <p>Formal y elegante, no olvides abrigarte bien.</p>
+        </div>
+        <!--div cerezo-->
+        <div class="section-cerezo3"></div>   
+       <!-- Galería de Fotos -->
+       <div class="section fade-in-element">
+           <h2>Galería</h2>
+           <div class="galeria">
+             <img src="/imagenes/v3.jpeg" alt="Foto 1" class="galeria-imagen" onclick="changePhoto(this)" loading="lazy">
+             <img src="/imagenes/h1.jpeg" alt="Foto 2" class="galeria-imagen" onclick="changePhoto(this)" loading="lazy">
+             <img src="/imagenes/h2.jpeg" alt="Foto 3" class="galeria-imagen" onclick="changePhoto(this)" loading="lazy">
+             <img src="/imagenes/v4.jpeg" alt="Foto 4" class="galeria-imagen" onclick="changePhoto(this)" loading="lazy">
+           </div>
+        </div>
+        <!-- Modal para visualización de fotos -->
+        <div id="photo-modal" class="photo-modal" onclick="closeModal(event)">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="main-photo-modal" src="" alt="Imagen ampliada">
+        </div>
+      <!-- Sección de Buenos deseos -->
+      <div class="section-wishes fade-in-element">
+            <h2>Buenos deseos</h2>
+            <button id="mostrarFormularioBtn">Enviar deseo</button>
+            <div id="formularioDeseo" style="display: none;">
+                <form id="wishForm">
+                    <input type="text" id="nombre" placeholder="Nombre" required />
+                    <br />
+                    <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+                    <br />
+                    <button type="submit">Enviar deseo</button>
+                </form>
+            </div>
+            <button id="verDeseosBtn">Ver buenos deseos</button>
+            <div id="wishesContainer" style="margin-top: 20px; display: none;"></div>
+        </div>
+         <!--filter-->
+         <div class="section-filter fade-in-element">
+            <lord-icon
+             src="https://cdn.lordicon.com/wsaaegar.json"
+             trigger="loop"
+             delay="2000"
+             stroke="light"
+             colors="primary:#9D7EB6,secondary:#d4af37"
+             style="width:200px;height:200px">
+            </lord-icon>
+            <h2>#MisQuinceValeria</h2>
+            <p>Sube las foto a Instagram utilizando mi hashtag, y poder convertir estas memorias en eternas.</p>
+            <h3>Hagamos los recuerdos inolvidables</h3>
+            <img src="/imagenes/QR-DORADO.png" alt="Código QR" width="250">
+            <p>Escanea el código QR o usa el botón para subir tus fotos</p>
+            <button onclick="window.open('https://drive.google.com/drive/folders/1BQGWbFowD2ecijiQfsnj8uxip-EhiL_m?usp=sharing','_blank')">Subir fotos</button>
+        </div>
+        <!--div cerezo-->
+        <div class="section-cerezo4"></div>
+          <!-- Sección No niños -->
+          <div class="section no-ninos fade-in-element">
+                <h2>Invitación exclusiva para adultos</h2>
+            <p>Por favor, esta celebración es solo para mayores de edad. Agradecemos tu comprensión.</p>
+        </div>        
+                 <!-- Confirmación -->
+        <div class="section fade-in-element">
+            <h3>Confirmar Asistencia</h3>
+            <lord-icon
+             src="https://cdn.lordicon.com/fjvfsqea.json"
+             trigger="loop"
+             delay="2000"
+             stroke="light"
+             colors="primary:#9D7EB6,secondary:#d4af37"
+             style="width:200px;height:200px">
+           </lord-icon>
+           <p>Para nosotros es muy importante que confirmes tu asistencia antes del 05 de Noviembre, o bien indicarnos si no podrás acompañarnos.</p>
+            <button onclick="confirmarAsistencia()">Confirmar</button>
+            <div id="confirmacion"></div>
+        </div>
+        <!-- Imagen -->
+        <div class="section fade-in-element">
+            <img src="/imagenes/v1.jpeg" alt="Foto de la quinceañera" width="100%" loading="lazy">
+        </div>
+        <!-- frase final-->
+        <div class="section-quote fade-in-element">
+            <h1>Hay momentos inolvidables que se atesoran en el corazón para siempre. Por esta razón quiero que compartas conmigo este día tan especial y seas parte de mi historia.</h1>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="section-social-icons fade-in-element">
+                <a href="https://www.facebook.com/thetwodesign" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/thetwodesign/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/50236011737" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="section-logo">
+                <img src="/Imagenes/2.png" alt="Logo" width="100" loading="lazy">
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
+
+    <audio id="magicSound" src="/sonidos/magia.mp3" preload="auto"></audio>
+    <div id="magicEffect"></div>
+</body>
+</html>
