@@ -1,6 +1,6 @@
 :root {
-    --color-1:	#D8BFD8;
-    --color-2: 	#cbb6e3;
+    --color-1:	#decaf4;
+    --color-2: 	#decaf4;
     --color-3:#003366;
     --color-4:#F5F5F5;
     --font-title:"Great Vibes", serif;
@@ -75,7 +75,7 @@ body {
 /* Texto dentro del sello */
 #seal h2 {
     margin: 0;
-    background: linear-gradient(to right, #ffac00, #d4af37, #ffd700, #d4af37, #ffac00);
+    background: linear-gradient(to right, #ffac00, #d4af37, #d6b80d, #d4af37, #ffac00);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -121,7 +121,7 @@ body {
 }
 /*texto dorado*/
 .sintillo h1, .sintillo h2, .sintillo h3{
-    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    background: linear-gradient(to right, #b29a68, #d4af37, #d6b80d, #d4af37, #b29a68);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -217,7 +217,7 @@ body {
 }
 /*dorado*/
 .section-countdown h1, p, .countdown-circle span, .section-music h2, .section-quote h1{
-    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    background: linear-gradient(to right, #b29a68, #d4af37, #d6b80d, #d4af37, #b29a68);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -373,7 +373,7 @@ body {
     font-weight: 400;
     font-size: 28px;
     margin-top: -60px;
-    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    background: linear-gradient(to right, #b29a68, #d4af37, #d6b80d, #d4af37, #b29a68);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -397,7 +397,7 @@ body {
     font-size: 40px;
     margin-top: -10px;
     margin-bottom: -10px;
-    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    background: linear-gradient(to right, #b29a68, #d4af37, #d6b80d, #d4af37, #b29a68);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -466,7 +466,7 @@ body {
     padding: 10px;
     font-weight: 400;
     font-style: italic;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 20px;
     margin-bottom: 10px;
     color: var(--color-2);
@@ -476,7 +476,7 @@ body {
     font-family: var(--font-text);
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 28px;
     padding: 5px;
     margin: 0;
     color: var(--color-2);
@@ -485,7 +485,7 @@ body {
     font-family: var(--font-text);
     font-style: normal;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 28px;
     color: var(--color-2);
     padding: 0;
     margin: 0;
@@ -576,7 +576,7 @@ body {
     cursor: pointer;
 }/*botones*/
 button {
-    background-color:rgb(157, 126, 182);
+    background-color:rgb(217, 190, 238);
     color: #fff;
     border-radius: 5px;
     font-family: var(--font-text);
@@ -587,11 +587,11 @@ button {
     text-transform: none;
     margin-bottom: 20px;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 20px;
 }
 button:hover {
-    background-color: white;
-    color:rgb(157, 126, 182);
+    background-color: #d4ac0d;
+    color:white;
 }
 /*footer*/
 footer {
@@ -624,11 +624,11 @@ footer {
   }
   .section-wishes h2 {
     font-family: var(--font-title);
-    font-size: 40px;
+    font-size: 50px;
     color: var(--color-2);
     font-style: italic;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.05);
   }
   .section-wishes form {
     margin-bottom: 20px;
@@ -687,7 +687,7 @@ footer {
     position: absolute;
     width: 10px;
     height: 10px;
-    background: radial-gradient(circle, #fff8dc 0%, #ffd700 70%, transparent 100%);
+    background: radial-gradient(circle, #fff8dc 0%, #d6b80d 70%, transparent 100%);
     border-radius: 50%;
     animation: sparkle 1s ease-out forwards;
     opacity: 0.8;
@@ -723,10 +723,10 @@ footer {
   
   .star {
     position: absolute;
-    background: radial-gradient(circle, #fff8dc 0%, #ffd700 70%, transparent 100%);
+    background: radial-gradient(circle, #fff8dc 0%, #d6b80d 70%, transparent 100%);
     border-radius: 50%;
     opacity: 0.7;
-    box-shadow: 0 0 6px 2px #ffd700cc; /* brillo suave */
+    box-shadow: 0 0 6px 2px #d6b80dcc; /* brillo suave */
     animation-name: twinkle;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
