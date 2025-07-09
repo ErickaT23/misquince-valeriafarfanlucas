@@ -71,7 +71,7 @@ function cargarDatosInvitado() {
 
 // Función para iniciar el contador de la fecha del evento
 function iniciarContador() {
-    const eventoFecha = new Date("September 27, 2025 00:00:00").getTime();
+    const eventoFecha = new Date("November 29, 2025 00:00:00").getTime();
 
     setInterval(() => {
         const ahora = new Date().getTime();
