@@ -1,5 +1,3 @@
-// invitados.js
-
 export const invitados = {
     '1': { nombre: 'Ana Pérez', pases: 3 },
     '2': { nombre: 'Luis García', pases: 2 },

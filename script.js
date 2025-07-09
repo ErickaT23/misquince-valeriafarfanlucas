@@ -133,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Función para confirmar asistencia
-// script.js
 import { invitados } from './invitados.js';
 
 function confirmarAsistencia() {
@@ -156,7 +155,6 @@ function confirmarAsistencia() {
   window.open(formURL, "_blank");
 }
 
-// Hacer disponible la función al HTML
 window.confirmarAsistencia = confirmarAsistencia;
 
 
