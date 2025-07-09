@@ -131,14 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
         observer.observe(element);
     });
 });
- // // Función para confirmar asistencia
-function confirmarAsistencia() {
-    // Link directo a tu Google Form (reemplaza con el tuyo)
-    const linkGoogleForm = "  https://docs.google.com/forms/d/e/1FAIpQLSedwNzh7uiU7zTThM3COblNHu86Kj0HVD1Jw44gd3vcH5kGHg/viewform?usp=sharing&ouid=101665209422942552137";
 
-    // Abrir el formulario en una nueva pestaña
-    window.open(linkGoogleForm, "_blank");
-}
 
 
 // Función para abrir Waze o Google Maps
