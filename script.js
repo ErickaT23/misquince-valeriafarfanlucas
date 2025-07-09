@@ -133,8 +133,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Función para confirmar asistencia
-import { invitados } from './invitados.js';
-
 function confirmarAsistencia() {
   const params = new URLSearchParams(window.location.search);
   const invitadoId = params.get("id");
