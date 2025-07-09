@@ -204,6 +204,9 @@ body {
 }
 /*sección countdown*/
 .section-countdown {
+    position: relative;
+    overflow: hidden; /* Asegura que el overlay no se salga */
+    z-index: 0; /* Importante para controlar capas */
     margin: 0;
     padding: 0;
     transform: translateY(20px);
@@ -214,7 +217,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
+  .section-countdown::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/fondo-estrellas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.6; /* Aquí controlás cuánta opacidad querés */
+    z-index: -1; /* Pone la imagen detrás del contenido */
+  }
+
 /*dorado*/
 .section-countdown h1, p, .countdown-circle span, .section-music h2, .section-quote h1{
     background: linear-gradient(to right, #b29a68, #d4af37, #d6b80d, #d4af37, #b29a68);
@@ -299,7 +317,8 @@ body {
     color: white;
 }
 /*section music*/
-.section-music{
+/* Section music */
+.section-music {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -310,7 +329,24 @@ body {
     box-sizing: border-box;
     margin-top: 0px;
     margin-bottom: 10px;
-}
+    z-index: 0; /* Asegura que el contenido quede por encima */
+    overflow: hidden; /* Por si acaso el fondo se sale */
+  }
+  .section-music::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/fondo-estrellas.png); /* Cambiá por la ruta que necesites */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1; /* Coloca el fondo detrás del contenido */
+  }
+  
 .section-music h2{
     font-family: var(--font-text);
     font-size: 20px;
@@ -356,7 +392,7 @@ body {
     z-index: -1;
 }
 /*section blessed*/
-.section-b{
+.section-b {
     position: relative;
     width: 100%;
     height: 370px;
@@ -365,8 +401,23 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom:0;
-}
+    margin-bottom: 0;
+    z-index: 0; /* Asegura que el contenido esté sobre el fondo */
+  }
+  .section-b::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/fondo-estrellas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5; /* Controla la opacidad del fondo */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+  }  
 .section-b p{
     font-family: var(--font-text);
     font-style: italic;
@@ -389,6 +440,60 @@ body {
     color:var(--color-2);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
+.section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/fondo-estrellas.png); /* Ruta de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+  }
+  .section-gifts {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .section-gifts::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/fondo-estrellas.png); /* Ruta de tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+  }
 .section h1{
     font-family: var(--font-text);
     padding: 15px;
@@ -404,8 +509,29 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 /*secciones otros colores*/
-.section-wishes, .section-playlist{
-    background-color: #f5effca8;
+.section-wishes,
+.section-playlist {
+  position: relative;
+  background-color: #f5effca8;
+  width: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+/* Imagen de fondo con opacidad */
+.section-wishes::before,
+.section-playlist::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/imagenes/fondo-estrellas.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.4; /* Podés ajustar entre 0.3 y 0.6 según qué tan sutil lo querés */
+  z-index: -1;
 }
 .section-playlist p {
     font-family: var(--font-text);
@@ -466,7 +592,7 @@ body {
     padding: 10px;
     font-weight: 400;
     font-style: italic;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 20px;
     margin-bottom: 10px;
     color: var(--color-2);
@@ -618,7 +744,6 @@ footer {
 }
 /*Buenos deseos*/
 .section-wishes {
-    padding: 30px 20px;
     text-align: center;
     animation: fadeIn var(--scroll-animation-duration) ease-in forwards;
   }
@@ -654,9 +779,8 @@ footer {
     margin-top: 20px;
   }
   .wish-card {
-    background-color: #fcfbfa;
+    background-color:white;
     padding: 15px;
-    border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     margin-bottom: 10px;
     max-width: 500px;
@@ -690,12 +814,11 @@ footer {
     background: radial-gradient(circle, #fff8dc 0%, #d6b80d 70%, transparent 100%);
     border-radius: 50%;
     animation: sparkle 1s ease-out forwards;
-    opacity: 0.8;
+    opacity: 0.7;
   }
   .section.no-ninos {
     background-color: #f5effca8; /* rosa suave transparente */
     padding: 25px 20px;
-    margin: 20px auto;
     max-width: 700px;
     text-align: center;
   }
@@ -720,21 +843,65 @@ footer {
     background: transparent;
     overflow: hidden;
   }
-  
   .star {
     position: absolute;
     background: radial-gradient(circle, #fff8dc 0%, #d6b80d 70%, transparent 100%);
     border-radius: 50%;
-    opacity: 0.7;
+    opacity: 0.6;
     box-shadow: 0 0 6px 2px #d6b80dcc; /* brillo suave */
     animation-name: twinkle;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
-  
   @keyframes twinkle {
     0%, 100% { opacity: 0.7; }
     50% { opacity: 0.2; }
+  }
+  .section-filter {
+    position: relative;
+    background-color: transparent; /* Podés ajustar si querés otro color base */
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  /* Imagen de fondo con opacidad */
+  .section-filter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/fondo-estrellas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4; /* Ajustable según el efecto deseado */
+    z-index: -1;
+  }
+  .section-quote {
+    position: relative;
+    background-color: transparent; /* Color base translúcido */
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  /* Imagen de fondo con opacidad */
+  .section-quote::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/imagenes/fondo-estrellas.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.4; /* Ajustalo según cómo querés que luzca */
+    z-index: -1;
   }
   
 /* Media Queries */
