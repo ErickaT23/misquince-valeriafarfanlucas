@@ -171,7 +171,6 @@ function elegirAplicacionOtraDireccion() {
     window.open(enlaceGoogleMaps, '_blank');
 }
 
-
 document.addEventListener("DOMContentLoaded", function () {
     // Mostrar/ocultar formulario
     const mostrarFormularioBtn = document.getElementById("mostrarFormularioBtn");
